@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
 
     int n, i;
+    i = 0;
 
-    do
-    {
-        cout << "Enter an integer: " << endl;
-        cin >> n;
-    }
-    while (n > 0);
-    {
-        n / 10;
-    }
-    
-    cout << "The number of digits is: " << n << endl;
+    cout << "Enter an integer: " << endl;
+    cin >> n;
+
+    do{
+        i = n / 10;
+        i++;
+
+    } while (n != 0);
+    cout << "The number of digits is: " << i << endl;
 
 
     return 0;
